@@ -98,8 +98,8 @@ function App() {
                     <span>{name}</span>
                   </td>
                   <td>{symbol.toUpperCase()}</td>
-                  <td>{current_price}$</td>
-                  <td>{total_volume}$</td>
+                  <td>${current_price}</td>
+                  <td>${total_volume}</td>
                   <td
                     className={
                       price_change_percentage_24h < 0 ? "lowVal" : "highVal"
@@ -107,7 +107,7 @@ function App() {
                   >
                     {price_change_percentage_24h.toFixed(2)}%
                   </td>
-                  <td>{market_cap}</td>
+                  <td>Mkt Cap: {market_cap}</td>
                 </tr>
               );
             })
