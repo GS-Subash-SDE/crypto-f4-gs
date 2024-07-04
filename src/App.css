@@ -1,38 +1,124 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* .App styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  width: 100%;
+  background-color: #1a1a1c;
   color: white;
+  border: 2px solid #8e8e8e;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+
+  padding: 1rem 20px 0 ;
 }
 
-.App-link {
-  color: #61dafb;
+/* Input field */
+.inputInfield {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+  
+  
+  .inputs {
+    font-size: 1rem;
+    font-weight: 400;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #8e8e8e;
+  color: white;
+  
+  &::placeholder {
+    color: white;
+  }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn{
+  /* min-width:10rem ; */
+  /* background-color: red; */
+  /* color: green; */
+  cursor: pointer;
+
+  &:active{
+    transform: scale(0.96);
+    background-color: #2d2d30;
   }
-  to {
-    transform: rotate(360deg);
+}
+.search-field{
+  min-width: 25rem;
+  flex-grow: 1;
+  text-align: left;
+  outline: none;  }
+}
+
+/* Table styles */
+table {
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: blue;
+  background: transparent;
+  /* margin-top: 20px; */
+}
+
+/* tbody styles */
+tbody {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+  background-color: orange;
+  background: transparent;
+}
+
+/* tr styles */
+tr {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-bottom: 2px solid #8e8e8e;
+  background-color: aquamarine ;
+  background: transparent;
+  padding: 1rem;
+  
+  .name-field{
+    display: flex;
+    gap: 20px;
   }
+}
+
+th {
+  display: grid;
+  place-content: center;
+}
+
+/* td styles */
+td {
+  background-color: orchid;
+  background: transparent;
+  padding: 10px;
+  text-align: center;
+  
+}
+.lowVal{
+  color:red
+}
+.highVal{
+  color:rgb(14, 219, 14)
+}
+
+.coin-img{
+  width: 1.4rem;
+  aspect-ratio: 1/1;
 }
