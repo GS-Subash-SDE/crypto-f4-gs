@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-f4-gs/static/css/main.320a61a4.css",
+    "main.js": "/crypto-f4-gs/static/js/main.f9c50ff0.js",
+    "static/media/redux.cjs": "/crypto-f4-gs/static/media/redux.7edfc461ab353f1712ab.cjs",
+    "index.html": "/crypto-f4-gs/index.html",
+    "main.320a61a4.css.map": "/crypto-f4-gs/static/css/main.320a61a4.css.map",
+    "main.f9c50ff0.js.map": "/crypto-f4-gs/static/js/main.f9c50ff0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.320a61a4.css",
+    "static/js/main.f9c50ff0.js"
+  ]
+}
